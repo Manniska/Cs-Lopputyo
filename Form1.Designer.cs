@@ -100,7 +100,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 19);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Level 1 Box [50 Coins]";
+            this.label2.Text = "Rare Box [50 Coins]";
             // 
             // openbtnbox3
             // 
@@ -118,7 +118,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 19);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Level 1 Box [50 Coins]";
+            this.label3.Text = "Common Box [20 Coins]";
             // 
             // Form1
             // 
