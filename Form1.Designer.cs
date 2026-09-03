@@ -47,7 +47,7 @@
             this.openbtn.TabIndex = 0;
             this.openbtn.Text = "Open";
             this.openbtn.UseVisualStyleBackColor = true;
-            this.openbtn.Click += new System.EventHandler(this.openbtn_Click);
+            this.openbtn.Click += new System.EventHandler(this.OpenBtn_Click);
             // 
             // opened
             // 
@@ -74,7 +74,7 @@
             this.invbtn.TabIndex = 3;
             this.invbtn.Text = "Inventory";
             this.invbtn.UseVisualStyleBackColor = true;
-            this.invbtn.Click += new System.EventHandler(this.invbtn_Click);
+            this.invbtn.Click += new System.EventHandler(this.InvBtn_Click);
             // 
             // openbtnbox2
             // 
@@ -84,7 +84,7 @@
             this.openbtnbox2.TabIndex = 0;
             this.openbtnbox2.Text = "Open";
             this.openbtnbox2.UseVisualStyleBackColor = true;
-            this.openbtnbox2.Click += new System.EventHandler(this.openbox2btn_Click);
+            this.openbtnbox2.Click += new System.EventHandler(this.OpenBox2Btn_Click);
             // 
             // label1
             // 
@@ -110,7 +110,7 @@
             this.openbtnbox3.TabIndex = 0;
             this.openbtnbox3.Text = "Open";
             this.openbtnbox3.UseVisualStyleBackColor = true;
-            this.openbtnbox3.Click += new System.EventHandler(this.openbox1btn_Click);
+            this.openbtnbox3.Click += new System.EventHandler(this.OpenBox1Btn_Click);
             // 
             // label3
             // 
@@ -155,4 +155,3 @@
         private System.Windows.Forms.Label label3;
     }
 }
-

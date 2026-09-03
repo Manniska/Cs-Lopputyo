@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lopputyo;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -14,7 +15,7 @@ namespace Lopputyo
             InitializeComponent();
             mainForm = form;
             inventoryItems = items;
-            itemsList.SelectedIndexChanged += itemsList_SelectedIndexChanged;
+            itemsList.SelectedIndexChanged += ItemsList_SelectedIndexChanged;
         }
 
         private void Inventory_Load(object sender, EventArgs e)
@@ -37,7 +38,7 @@ namespace Lopputyo
 
         private void UpdateBalanceUI()
         {
-            balance.Text = "Balance: " + mainForm.Coins;
+            balance.Text = "Balance: " + mainForm.coins;
         }
 
         private int GetItemPrice(string itemName)
@@ -52,7 +53,7 @@ namespace Lopputyo
             return 0;
         }
 
-        private void sellbtn_Click(object sender, EventArgs e)
+        private void SellBtn_Click(object sender, EventArgs e)
         {
             if (itemsList.SelectedItem == null)
             {
@@ -63,7 +64,7 @@ namespace Lopputyo
             string selectedItem = itemsList.SelectedItem.ToString();
             int sellPrice = GetItemPrice(selectedItem);
 
-            mainForm.Coins += sellPrice;
+            mainForm.coins += sellPrice;
 
             inventoryItems.Remove(selectedItem);
             itemsList.Items.Remove(selectedItem);
@@ -74,7 +75,7 @@ namespace Lopputyo
             UpdateBalanceUI();
         }
 
-        private void sellallbtn_Click(object sender, EventArgs e)
+        private void SellAllBtn_Click(object sender, EventArgs e)
         {
             if (inventoryItems.Count == 0)
             {
@@ -89,7 +90,7 @@ namespace Lopputyo
                 totalEarned += GetItemPrice(item);
             }
 
-            mainForm.Coins += totalEarned;
+            mainForm.coins += totalEarned;
             inventoryItems.Clear();
             itemsList.Items.Clear();
 
@@ -111,7 +112,7 @@ namespace Lopputyo
             worth.Text = "Inventory worth: " + total;
         }
 
-        private void itemsList_SelectedIndexChanged(object sender, EventArgs e)
+        private void ItemsList_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateSelectedWorth();
         }

@@ -54,7 +54,7 @@
             this.sellbtn.TabIndex = 1;
             this.sellbtn.Text = "Sell Selected";
             this.sellbtn.UseVisualStyleBackColor = true;
-            this.sellbtn.Click += new System.EventHandler(this.sellbtn_Click);
+            this.sellbtn.Click += new System.EventHandler(this.SellBtn_Click);
             // 
             // sellallbtn
             // 
@@ -64,7 +64,7 @@
             this.sellallbtn.TabIndex = 1;
             this.sellallbtn.Text = "Sell All";
             this.sellallbtn.UseVisualStyleBackColor = true;
-            this.sellallbtn.Click += new System.EventHandler(this.sellallbtn_Click);
+            this.sellallbtn.Click += new System.EventHandler(this.SellAllBtn_Click);
             // 
             // balance
             // 
