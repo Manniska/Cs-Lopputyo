@@ -11,7 +11,14 @@ namespace Lopputyo
         private Random random = new Random();
         private List<string> playerInventory = new List<string>();
 
-        // Tekoäly keksi esineet.
+        // Turvallinen tallennuspolku käyttäjän AppData-kansioon
+        private static readonly string saveDirectory = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            "LootBoxSimulator"
+        );
+        private static readonly string saveFilePath = Path.Combine(saveDirectory, "savegame.txt");
+
+        // 1. ILMAINEN LAATIKKO
         private static readonly List<Tuple<string, int, int>> FreeBoxItems = new List<Tuple<string, int, int>>
         {
             Tuple.Create("[Junk] Gravel Chunk", 50, 1),
@@ -29,6 +36,7 @@ namespace Lopputyo
             Tuple.Create("[Legendary] Heart of the Earth Core", 1, 2500)
         };
 
+        // 2. KESKITASON LAATIKKO
         private static readonly List<Tuple<string, int, int>> MediumBoxItems = new List<Tuple<string, int, int>>
         {
             Tuple.Create("[Junk] Limestone Pebble", 15, 1),
@@ -48,6 +56,7 @@ namespace Lopputyo
             Tuple.Create("[Legendary] Pink Star Diamond", 2, 1000)
         };
 
+        // 3. KALLIS LAATIKKO
         private static readonly List<Tuple<string, int, int>> PremiumBoxItems = new List<Tuple<string, int, int>>
         {
             Tuple.Create("[Common] Coal Chunk", 10, 8),
@@ -103,11 +112,16 @@ namespace Lopputyo
         {
             try
             {
+                if (!Directory.Exists(saveDirectory))
+                {
+                    Directory.CreateDirectory(saveDirectory);
+                }
+
                 List<string> lines = new List<string>();
                 lines.Add(coins.ToString());
                 lines.AddRange(playerInventory);
 
-                File.WriteAllLines("savegame.txt", lines);
+                File.WriteAllLines(saveFilePath, lines);
             }
             catch (Exception ex)
             {
@@ -119,9 +133,9 @@ namespace Lopputyo
         {
             try
             {
-                if (File.Exists("savegame.txt"))
+                if (File.Exists(saveFilePath))
                 {
-                    string[] lines = File.ReadAllLines("savegame.txt");
+                    string[] lines = File.ReadAllLines(saveFilePath);
                     if (lines.Length > 0)
                     {
                         int.TryParse(lines[0], out int loadedCoins);

@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../LootBoxSimulatorSetup/LootBoxSimulatorSetup.vdproj" Type="Installer" />
   <Project Path="Lopputyo.csproj" Id="a468d3b8-23a1-401d-9782-6db8b8fbc1c4" />
 </Solution>
