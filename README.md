@@ -1,7 +1,5 @@
 # Mineral LootBox Simulator
 
-Mineral LootBox Simulator on C#-kielellä toteutettu Windows Forms -työpöytäsovellus. Projekti on toteutettu kurssin lopputyönä, ja se demonstroi olio-ohjelmoinnin periaatteita, tapahtumapohjaista käyttöliittymäsuunnittelua, tietorakenteiden hallintaa sekä tiedostopohjaista tiedon pysyvyyttä (File I/O).
-
 ---
 
 ## 1. Sovelluksen toiminta ja käyttötarkoitus
