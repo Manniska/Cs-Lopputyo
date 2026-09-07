@@ -20,7 +20,8 @@ Pelaaja kerää mineraaleja ja jalokiviä avaamalla erihintaisia laatikoita ja a
 ---
 
 ## 2. Vuokaavio sovelluksesta
-<img width="3020" height="2260" alt="LopputyoVuokaavio" src="https://github.com/user-attachments/assets/4a1f42ca-f092-4dcf-8651-bc4680dfd902" />
+<img width="3020" height="2260" alt="vuokaavio" src="https://github.com/user-attachments/assets/245d5ae0-b93b-4974-a3ae-f394e17b23ad" />
+
 
 ---
 
