@@ -4,7 +4,7 @@
 
 ## 1. Sovelluksen toiminta ja käyttötarkoitus
 
-Pelaaja avaa mineraaleja ja jalokiviä avaamalla erihintaisia laatikoita ja ansaitsee lisää saldoa myymällä keräämiään esineitä.
+Pelaaja kerää mineraaleja ja jalokiviä avaamalla erihintaisia laatikoita ja ansaitsee lisää saldoa myymällä keräämiään esineitä.
 
 ### Päätoiminnot:
 - **Laatikoiden avaaminen:** Pelaaja voi avata kolmea eri tasoista laatikkoa:
