@@ -1,10 +1,10 @@
-# Mineral LootBox Simulator
+# LootBox Simulator
 
 ---
 
 ## 1. Sovelluksen toiminta ja käyttötarkoitus
 
-Sovelluksen ideana on simuloida laatikonavausmekaniikkaa (loot box) ja tavaroiden inventaariohallintaa. Pelaaja kerää mineraaleja, jalokiviä ja kivilajeja avaamalla erihintaisia laatikoita ja ansaitsee lisää varoja myymällä keräämiään esineitä.
+Pelaaja avaa mineraaleja ja jalokiviä avaamalla erihintaisia laatikoita ja ansaitsee lisää saldoa myymällä keräämiään esineitä.
 
 ### Päätoiminnot:
 - **Laatikoiden avaaminen:** Pelaaja voi avata kolmea eri tasoista laatikkoa:
