@@ -21,3 +21,9 @@ Pelaaja kerää mineraaleja ja jalokiviä avaamalla erihintaisia laatikoita ja a
 
 ## 2. Vuokaavio sovelluksesta
 
+---
+
+## 3. Jatkokehitysideat
+
+- Tehdä esineiden stacking systeemi eli esineet pinoutuvat.
+- Tehdä graafiset näkymät.
